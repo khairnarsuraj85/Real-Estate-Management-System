@@ -19,9 +19,9 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # Cloudinary configuration - FIXED: Use proper env variable names
-    CLOUDINARY_CLOUD_NAME = os.environ.get('CLOUDINARY_CLOUD_NAME', 'dseigrlm3')
-    CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY', '733832722963779')
-    CLOUDINARY_API_SECRET = os.environ.get('CLOUDINARY_API_SECRET', 'Y5F8EsVpKay9-07E1BVqWs5S138')
+    CLOUDINARY_CLOUD_NAME = os.environ.get('CLOUDINARY_CLOUD_NAME', '')
+    CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY', '')
+    CLOUDINARY_API_SECRET = os.environ.get('CLOUDINARY_API_SECRET', '')
     
     # CORS settings - FIXED: Added frontend port 5173
     allowed_origins = os.environ.get('ALLOWED_ORIGINS', 'http://localhost:3000,http://localhost:5173')
